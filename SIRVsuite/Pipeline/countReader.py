@@ -29,8 +29,8 @@ class countReader():
         self.spike_in_name_pattern = {"SIRV":{"gene":"","transcript":""}, "ERCC":{"gene":"","transcript":""}}
         
         # Provide regex gene or transcript IDs
-        self.spike_in_name_pattern["SIRV"]["gene"] = "^SIRV\\d{1}$"
-        self.spike_in_name_pattern["SIRV"]["transcript"] = "^SIRV\\d{3}$"
+        self.spike_in_name_pattern["SIRV"]["gene"] = "^SIRV\\d{1,5}$"
+        self.spike_in_name_pattern["SIRV"]["transcript"] = "^SIRV\\d{1,5}$"
         self.spike_in_name_pattern["ERCC"]["gene"] = "^ERCC-\\d{5}$"
         self.spike_in_name_pattern["ERCC"]["transcript"] = "(DQ|EF)\\d{6}"
 
